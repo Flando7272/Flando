@@ -96,7 +96,6 @@ MainSection:AddToggle("Loop God Mode", "Keeps god mode on", false, function(bool
     GodMode_Enabled = bool;
 end)
 
--- Auto Bhop (Credits to Egg Salad)
 BhopSection:AddToggle("Auto Bhop", "Simply enable and jump once to start auto hopping", false, function(bool)
     Bhop_Enabled = bool;
 
@@ -170,7 +169,6 @@ ESPSection:AddToggle("AI ESP", "memaybeo", false, function(bool)
     AI_ESP = bool;
 end)
 
--- Highlight helper
 game:GetService("Players").PlayerAdded:Connect(function(Player)
     Player.CharacterAdded:Connect(function(Char)
         if Highlights_Active then
