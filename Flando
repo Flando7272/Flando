@@ -71,7 +71,7 @@ end
 local Flando = {}
 
 function Flando:ToggleUi()
-if game.CoreGui:FindFirstChild("Flando").Enabled == true then -- oh am dumb
+if game.CoreGui:FindFirstChild("Flando").Enabled == true then 
 game.CoreGui:FindFirstChild("Flando").Enabled = false
 else
 game.CoreGui:FindFirstChild("Flando").Enabled = true
@@ -91,7 +91,7 @@ function Flando:Window(text,gamenme,logo,keybind)
 	    gamename = ""..PlaceName.Name
     end
 	
-	local Flando = Instance.new("ScreenGui") -- guess i am using hubname wrong
+	local Flando = Instance.new("ScreenGui")
 	Flando.Name = "Flando" -- wait
 	Flando.Parent = game.CoreGui
 	Flando.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
